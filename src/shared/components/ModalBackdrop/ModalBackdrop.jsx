@@ -59,11 +59,11 @@ const ModalBackdrop = ({ children, onClose }) => {
       onClick={handleCloseModal}
       style={{ top: '10px', height: `${h1 - 20}px` }}
     >
-      <div style={{ color: 'red' }}>
+      {/* <div style={{ color: 'red' }}>
         h1 {h1}
         h2 {h2}
         h3 {h3}
-      </div>
+      </div> */}
       {children}
     </div>
   );
