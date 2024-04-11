@@ -5,6 +5,7 @@ import { useMediaQuery } from 'hooks/index';
 
 const ModalBackdrop = ({ children, onClose }) => {
   const [active, setActive] = useState(false);
+  const [isMobile] = useState(useMediaQuery.isMobile);
 
   useEffect(() => {
     setTimeout(() => setActive(true), 300);
@@ -31,7 +32,7 @@ const ModalBackdrop = ({ children, onClose }) => {
     };
   }, [handleCloseModal]);
 
-  const isMobile = useMediaQuery.isMobile;
+  // const isMobile = useMediaQuery.isMobile;
   const h1 = window.innerHeight;
   // h2 = document.documentElement.clientHeight;
   // h3 = screen.height;
