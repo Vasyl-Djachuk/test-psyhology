@@ -29,9 +29,16 @@ const ModalBackdrop = ({ children, onClose }) => {
       document.body.removeAttribute('style');
     };
   }, [handleCloseModal]);
+  let h1, h2;
+
+  h1 = window.innerHeight;
+  h2 = document.body.clientHeight;
 
   return (
     <div className={dinamicStyle} onClick={handleCloseModal}>
+      <div>
+        h1{h1} h2{h2}
+      </div>
       {children}
     </div>
   );
