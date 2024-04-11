@@ -6,7 +6,7 @@ import { useMediaQuery } from 'hooks/index';
 const ModalBackdrop = ({ children, onClose }) => {
   const [active, setActive] = useState(false);
   const [isMobile] = useState(useMediaQuery.isMobile);
-  const [mobileHeight, setmobileHeight] = useState(window.innerHeight);
+  // const [mobileHeight, setmobileHeight] = useState(window.innerHeight);
 
   useEffect(() => {
     setTimeout(() => setActive(true), 300);
@@ -39,20 +39,20 @@ const ModalBackdrop = ({ children, onClose }) => {
   h2 = document.documentElement.clientHeight;
   h3 = screen.height;
 
-  useEffect(() => {
-    const handleResize = () => {
-      setmobileHeight(window.innerHeight);
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setmobileHeight(window.innerHeight);
+  //   };
 
-    window.addEventListener('resize', handleResize);
+  //   window.addEventListener('resize', handleResize);
 
-    // Call handleResize immediately in case the size is needed on initial render
-    // handleResize();
+  //   // Call handleResize immediately in case the size is needed on initial render
+  //   // handleResize();
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // }, []);
   return (
     <div
       className={dinamicStyle}
