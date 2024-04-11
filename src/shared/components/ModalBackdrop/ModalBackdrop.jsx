@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import s from './ModalBackdrop.module.scss';
 import clsx from 'clsx';
+import { useMediaQuery } from 'hooks/index';
 
 const ModalBackdrop = ({ children, onClose }) => {
   const [active, setActive] = useState(false);
@@ -29,9 +30,9 @@ const ModalBackdrop = ({ children, onClose }) => {
       document.body.removeAttribute('style');
     };
   }, [handleCloseModal]);
-  let h1, h2, h3;
 
-  h1 = window.innerHeight;
+  const isMobile = useMediaQuery.isMobile;
+  const h1 = window.innerHeight;
   // h2 = document.documentElement.clientHeight;
   // h3 = screen.height;
 
@@ -39,7 +40,7 @@ const ModalBackdrop = ({ children, onClose }) => {
     <div
       className={dinamicStyle}
       onClick={handleCloseModal}
-      style={{ top: '10px', height: `${h1 - 20}px` }}
+      style={isMobile && { top: '10px', height: `${h1 - 20}px` }}
     >
       {/* <div style={{ color: 'red' }}>
         h1 {h1}
