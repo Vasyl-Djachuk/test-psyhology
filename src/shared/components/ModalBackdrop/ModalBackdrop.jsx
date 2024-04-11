@@ -34,8 +34,13 @@ const ModalBackdrop = ({ children, onClose }) => {
   h1 = window.innerHeight;
   h2 = document.documentElement.clientHeight;
   h3 = screen.height;
+
   return (
-    <div className={dinamicStyle} onClick={handleCloseModal} style={{}}>
+    <div
+      className={dinamicStyle}
+      onClick={handleCloseModal}
+      style={{ top: '10px', height: `${h1 - 20}px` }}
+    >
       <div style={{ color: 'red' }}>
         h1 {h1}
         h2 {h2}
