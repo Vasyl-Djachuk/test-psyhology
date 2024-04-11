@@ -57,7 +57,7 @@ const ModalBackdrop = ({ children, onClose }) => {
     <div
       className={dinamicStyle}
       onClick={handleCloseModal}
-      style={isMobile && { top: '10px', height: `${h1 - 20}px` }}
+      style={{ top: '10px', height: `${h1 - 20}px` }}
     >
       <div style={{ color: 'red' }}>
         h1 {h1}
