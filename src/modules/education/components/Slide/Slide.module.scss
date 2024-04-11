@@ -1,0 +1,69 @@
+.slide {
+  padding: 16px;
+  display: block;
+  min-height: 471px;
+  border-radius: 16px;
+  margin-right: 0px;
+  border-radius: 16px;
+  border: 1px solid #1e5b2a;
+  background-color: #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+
+  transition:
+    border-color #{$animation-duration} #{$animation-time-function},
+    box-shadow #{$animation-duration} #{$animation-time-function};
+
+  &:hover,
+  &:focus-within {
+    padding: 15px;
+    border: 2px solid #eb6d0a;
+    box-shadow: 0px 0px 20px 0px rgba(31, 31, 31, 0.1);
+  }
+
+  @include media(tablet) {
+  }
+
+  @include media(desktop) {
+    padding: 24px;
+
+    &:hover,
+    &:focus-within {
+      padding: 23px;
+    }
+  }
+}
+
+.sliderText {
+  color: $typography-black;
+  outline: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.frame {
+  height: 351px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    margin-bottom: 24px;
+    height: 406px;
+  }
+}
+
+.pictureWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.picture {
+  height: 100%;
+  width: auto;
+}

@@ -1,0 +1,94 @@
+.section {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @include media(tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: -120px;
+  }
+}
+
+.title {
+  color: #2c2727;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+
+  & .accent {
+    color: #eb6d0a;
+  }
+
+  @include media(tablet) {
+    font-size: 40px;
+  }
+
+  @include media(desktop) {
+    width: 588px;
+    @include font(48, 56);
+  }
+}
+
+.topText,
+.bottomText {
+  color: #414343;
+  @include font(16, 24);
+  letter-spacing: -0.02em;
+}
+
+.topText {
+  margin-top: 16px;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+}
+
+.bottomText {
+  margin-bottom: 16px;
+
+  @include media(tablet) {
+    margin-bottom: 24px;
+  }
+}
+
+.pictureWrapper {
+  @include media(tablet) {
+    width: 688px;
+    height: 688px;
+  }
+
+  @include media(desktop) {
+    width: 708px;
+    height: 708px;
+  }
+}
+
+.textWrapper {
+  @include media(desktop) {
+    width: 588px;
+    margin-right: 24px;
+  }
+}
+
+.aboutWrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.container {
+  @include media(desktop) {
+    padding-right: 0;
+  }
+}

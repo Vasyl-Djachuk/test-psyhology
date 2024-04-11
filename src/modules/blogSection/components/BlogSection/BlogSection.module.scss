@@ -1,0 +1,29 @@
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include media(tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.svgfirst {
+  fill: $primary-orange;
+  height: 697px;
+  width: 379px;
+  right: 0;
+  bottom: -485px;
+}
+.svgLine {
+  stroke: $primary-orange;
+  height: 713px;
+  width: 400px;
+  right: 0;
+  bottom: -493px;
+}

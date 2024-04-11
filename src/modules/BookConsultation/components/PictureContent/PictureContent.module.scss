@@ -1,0 +1,28 @@
+.thumb {
+  margin: 0 auto;
+
+  @include media(mobile) {
+    width: 343px;
+    height: 343px;
+  }
+
+  @include media(tablet) {
+    width: 688px;
+    height: 688px;
+  }
+
+  @include media(desktop) {
+    min-width: 708px;
+    height: 708px;
+  }
+}
+@include media(tablet) {
+  .picture {
+    height: 688px;
+  }
+}
+@include media(desktop) {
+  .picture {
+    height: 708px;
+  }
+}

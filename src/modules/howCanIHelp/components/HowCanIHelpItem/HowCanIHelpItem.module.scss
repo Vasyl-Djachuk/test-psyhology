@@ -1,0 +1,128 @@
+.container {
+  box-sizing: border-box;
+  position: relative;
+  max-width: 343px;
+  height: 520px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+  border: 1px solid #1e5b2a;
+  background-color: #fff;
+  cursor: pointer;
+
+  transition:
+    border-color #{$animation-duration} #{$animation-time-function},
+    box-shadow #{$animation-duration} #{$animation-time-function};
+
+  &:hover,
+  &:focus-within {
+    padding: 15px;
+    border: 2px solid #eb6d0a;
+    box-shadow: 0px 0px 20px 0px rgba(31, 31, 31, 0.1);
+  }
+
+  @include media(tablet) {
+    max-width: 332px;
+    height: 528px;
+  }
+  @include media(desktop) {
+    padding: 24px;
+    max-width: 384px;
+    height: 540px;
+
+    &:hover,
+    &:focus-within {
+      padding: 23px;
+    }
+  }
+}
+
+.img {
+  border-radius: 8px;
+  height: 240px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  color: #2c2727;
+  font-weight: 600;
+
+  transition: color #{$animation-duration} #{$animation-time-function};
+
+  @include font(16, 20);
+
+  @include media(tablet) {
+    @include font(18, 24);
+  }
+  @include media(desktop) {
+    margin-top: 24px;
+    @include font(20, 28);
+  }
+}
+
+.container:hover .title {
+  color: #1e5b2a;
+}
+
+.text {
+  color: #414343;
+  overflow: auto;
+  @include font(14, 20);
+}
+
+.price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb6d0a;
+  border-radius: 8px;
+  @include font(14, 20);
+}
+
+.button {
+  display: flex;
+  height: 48px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: #6ca24a;
+  outline: none;
+  color: #fff;
+  font-weight: 600;
+
+  transition:
+    background-color #{$animation-duration} #{$animation-time-function},
+    font-weight #{$animation-duration} #{$animation-time-function};
+
+  @include font(14, 20);
+
+  &:hover,
+  &:focus {
+    background-color: #467927;
+    font-weight: 700;
+  }
+
+  @include media(desktop) {
+    max-width: 153px;
+  }
+}
+
+.container:hover .button {
+  background-color: #467927;
+  font-weight: 700;
+}

@@ -1,0 +1,50 @@
+.modal {
+  background-color: #fff;
+  overflow: auto;
+  border-radius: 8px;
+}
+.container {
+  height: 60vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px 16px 40px 16px;
+
+  @include media(tablet) {
+    height: 80vh;
+    width: auto;
+    padding: 40px;
+  }
+  @include media(desktop) {
+    padding: 40px;
+  }
+}
+.imgWrap {
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  @include media(tablet) {
+    // height: 90vh;
+  }
+
+  @include media(desktop) {
+    // height: 90vh;
+  }
+}
+
+.btnClose {
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 28px;
+  width: 12px;
+  height: 12px;
+  stroke: #1e5b2a;
+  &:hover {
+    stroke: #043e0f;
+  }
+  @include media(tablet) {
+  }
+}

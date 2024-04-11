@@ -1,0 +1,50 @@
+.btnGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.btn {
+  display: flex;
+  height: 48px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  @include font(14, 20);
+  border-radius: 100px;
+  background: $dark-green;
+  color: $white;
+  font-weight: 600;
+  transition:
+    background-color $animation-duration $animation-time-function,
+    font-weight $animation-duration $animation-time-function;
+}
+.btnFirst {
+  &:hover,
+  &:focus {
+    background-color: $dark-green-hover;
+    font-weight: 700;
+  }
+}
+.btnSecond {
+  background-color: $light-green;
+  &:hover,
+  &:focus {
+    background-color: $light-green-hover;
+    font-weight: 700;
+  }
+}
+
+@include media(tablet) {
+  .btnGroup {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+  .btn {
+    padding: 8px 16px;
+    width: 332px;
+  }
+}

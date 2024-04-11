@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Julia Kopytko",
+    "position": "UX/UI Designer",
+    "img1x": "imgDeskJulia1x",
+    "img2x": "imgDeskJulia2x",
+    "linkedin": "https://www.linkedin.com/in/juliakopytko/"
+  },
+  {
+    "name": "Andrii Kyrylenko",
+    "position": "Lead Developer ",
+    "img1x": "imgDeskAndrii1x",
+    "img2x": "imgDeskAndrii2x",
+    "linkedin": "https://www.linkedin.com/in/andrii-l-kyrylenko/"
+  },
+  {
+    "name": "Anton Ishchenko",
+    "position": "Developer",
+    "img1x": "imgDeskAnton1x",
+    "img2x": "imgDeskAnton2x",
+    "linkedin": "https://www.linkedin.com/in/antony-ishchenko/"
+  },
+  {
+    "name": "Iryna Lender",
+    "position": "Developer",
+    "img1x": "imgDeskIra1x",
+    "img2x": "imgDeskIra2x",
+    "linkedin": "http://www.linkedin.com/in/iryna-lender"
+  },
+  {
+    "name": "Kostiantyn Kulzhynskyi",
+    "position": "Developer",
+    "img1x": "imgDeskKostiantyn1x",
+    "img2x": "imgDeskKostiantyn2x",
+    "linkedin": "https://www.linkedin.com/in/kostiantyn-kulzhynskyi"
+  },
+  {
+    "name": "Oleksandr Krizhanovsky",
+    "position": "Developer",
+    "img1x": "imgDeskOleks1x",
+    "img2x": "imgDeskOleks2x",
+    "linkedin": "https://www.linkedin.com/in/oleksandr-krizhanovsky/"
+  },
+  {
+    "name": "Serhii Leonov",
+    "position": "Developer",
+    "img1x": "imgDeskSergij1x",
+    "img2x": "imgDeskSergij2x",
+    "linkedin": "https://www.linkedin.com/in/leonovserhii/"
+  },
+  {
+    "name": "Nataliia Musienko",
+    "position": "Developer",
+    "img1x": "imgDeskTasha1x",
+    "img2x": "imgDeskTasha2x",
+    "linkedin": "http://www.linkedin.com/in/natalia-musienko-front-end-developer"
+  },
+  {
+    "name": "Maryna Nazina",
+    "position": "Developer",
+    "img1x": "imgDeskMari1x",
+    "img2x": "imgDeskMari2x",
+    "linkedin": "https://www.linkedin.com/in/nazinamari/"
+  },
+  {
+    "name": "Yevhen Pozniak",
+    "position": "Developer",
+    "img1x": "imgDeskEvgenij1x",
+    "img2x": "imgDeskEvgenij2x",
+    "linkedin": "https://www.linkedin.com/in/yevhen-pozniak/"
+  },
+  {
+    "name": "Vasyl Diachuk",
+    "position": "Developer",
+    "img1x": "imgDeskVasil1x",
+    "img2x": "imgDeskVasil2x",
+    "linkedin": "http://www.linkedin.com/in/vasyl-diachuk"
+  },
+  {
+    "name": "Anastasiia Kutusenko",
+    "position": "QA Engineer",
+    "img1x": "imgDeskAnastasia1x",
+    "img2x": "imgDeskAnastasia2x",
+    "linkedin": "http://www.linkedin.com/in/anastasiia-kutusenko"
+  },
+  {
+    "name": "Lydmila Matviychuk",
+    "position": "QA Engineer",
+    "img1x": "imgDeskLuda1x",
+    "img2x": "imgDeskLuda2x",
+    "linkedin": "https://www.linkedin.com/in/lydmila-matviychuk-6b1208290/"
+  },
+  {
+    "name": "Nadiya Ilnitska",
+    "position": "QA Engineer",
+    "img1x": "imgDeskNadia1x",
+    "img2x": "imgDeskNadia2x",
+    "linkedin": "http://linkedin.com/in/nadiya-ilnitska"
+  },
+  {
+    "name": "Oksana Luchko",
+    "position": "QA Engineer",
+    "img1x": "imgDeskOksana1x",
+    "img2x": "imgDeskOksana2x",
+    "linkedin": "https://www.linkedin.com/in/oksana-luchko-3a5b2b289"
+  },
+  {
+    "name": "Yurii Dankanych",
+    "position": "QA Engineer",
+    "img1x": "imgDeskJurij1x",
+    "img2x": "imgDeskJurij2x",
+    "linkedin": "http://www.linkedin.com/in/yurii-dankanych-2b7b07279"
+  },
+  {
+    "name": "Liza Sigal",
+    "position": "Project Manager",
+    "img1x": "imgDeskLiza1x",
+    "img2x": "imgDeskLiza2x",
+    "linkedin": "https://www.linkedin.com/in/ielizaveta-sigal/"
+  }
+]
