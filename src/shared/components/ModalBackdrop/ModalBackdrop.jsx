@@ -34,9 +34,10 @@ const ModalBackdrop = ({ children, onClose }) => {
   }, [handleCloseModal]);
 
   // const isMobile = useMediaQuery.isMobile;
-  // const h1 = window.innerHeight;
-  // h2 = document.documentElement.clientHeight;
-  // h3 = screen.height;
+  let h2, h3;
+  const h1 = window.innerHeight;
+  h2 = document.documentElement.clientHeight;
+  h3 = screen.height;
 
   useEffect(() => {
     const handleResize = () => {
@@ -58,11 +59,11 @@ const ModalBackdrop = ({ children, onClose }) => {
       onClick={handleCloseModal}
       style={isMobile && { top: '10px', height: `${mobileHeight - 20}px` }}
     >
-      {/* <div style={{ color: 'red' }}>
+      <div style={{ color: 'red' }}>
         h1 {h1}
         h2 {h2}
         h3 {h3}
-      </div> */}
+      </div>
       {children}
     </div>
   );
